@@ -1,0 +1,10 @@
+name : Issues workflow
+
+on : issues
+
+jobs:
+    output-info:
+        runs-on: ubuntu-latest
+        steps:
+            - name : Issues Event Logging
+              run : echo "${{github.event}}"

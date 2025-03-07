@@ -55,11 +55,11 @@ jobs:
 
             - name: Tag Docker Image to Docker Hub
               run: |
-                  docker tag my-app ${{ secrets.DOCKER_USERNAME }}/actions:latest
+                  docker tag my-app ${{ secrets.DOCKER_HUB }}/actions:latest
             
             - name: Push Docker Image to Docker Hub
               run: |
-                docker push ${{ secrets.DOCKER_USERNAME }}/actions:latest
+                docker push ${{ secrets.DOCKER_HUB }}/actions:latest
             
             - name: Deploy Project
               run: echo "Application deployed via Docker Hub"

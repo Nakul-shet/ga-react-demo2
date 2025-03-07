@@ -1,7 +1,7 @@
-name: Deployment exercise 1
+name: Docker Deployment
 
 on:
-    push:
+    # push:
     workflow_dispatch:
 
 jobs:
